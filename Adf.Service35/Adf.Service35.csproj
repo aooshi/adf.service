@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DCE99FD-0960-43F5-8415-88AB5548F0E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf.Service</RootNamespace>
+    <AssemblyName>Adf.Service</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\develop\bin\adf.service\35\2.0.2\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\develop\bin\adf.service\35\2.0.2\Adf.Service.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adf">
+      <HintPath>C:\develop\bin\adf4\adf35\4.6.13\Adf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Adf.Service\HAClient.cs">
+      <Link>HAClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\HAContext.cs">
+      <Link>HAContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\HAServer.cs">
+      <Link>HAServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\IHttpService.cs">
+      <Link>IHttpService.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\IService.cs">
+      <Link>IService.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\Service.cs">
+      <Link>Service.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\Adf.Service\ServiceChange.cs">
+      <Link>ServiceChange.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\ServiceContext.cs">
+      <Link>ServiceContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\ServiceException.cs">
+      <Link>ServiceException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\ServiceHelper.cs">
+      <Link>ServiceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Service\ServiceState.cs">
+      <Link>ServiceState.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

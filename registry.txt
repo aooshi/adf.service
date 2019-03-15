@@ -1,0 +1,28 @@
+RegistryKey:"" //32 length rand latter
+RegistryServers:
+[
+	{
+		"name":""
+		,"pid":0
+		,"hostname":""
+		,"port":0
+		,"status":"online"
+		,"level":0
+	}
+,	{
+		"name":""
+		,"pid":0
+		,"hostname":""
+		,"port":0
+		,"status":"offline"
+		,"level":0
+	}
+,	{
+		"name":""
+		,"pid":0
+		,"hostname":""
+		,"port":0
+		,"status":"slave"
+		,"level":0
+	}
+]
