@@ -35,7 +35,7 @@
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>C:\develop\bin\adf.service\20\2.0.2\</OutputPath>
+    <OutputPath>C:\develop\bin\adf.service\2.0.2\net20\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -49,7 +49,7 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
-    <DocumentationFile>C:\develop\bin\adf.service\20\2.0.2\Adf.Service.XML</DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf.service\2.0.2\net20\Adf.Service.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -59,9 +59,9 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf, Version=4.6.9.20723, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Adf, Version=4.6.13.30867, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf4\adf20\4.6.13\Adf.dll</HintPath>
+      <HintPath>..\libs\adf\4.6.13\net20\Adf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

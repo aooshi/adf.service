@@ -25,15 +25,16 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>C:\develop\bin\adf.service\35\2.0.2\</OutputPath>
+    <OutputPath>C:\develop\bin\adf.service\2.0.2\net35\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>C:\develop\bin\adf.service\35\2.0.2\Adf.Service.xml</DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf.service\2.0.2\net35\Adf.Service.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf">
-      <HintPath>C:\develop\bin\adf4\adf35\4.6.13\Adf.dll</HintPath>
+    <Reference Include="Adf, Version=4.6.13.30866, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf\4.6.13\net35\Adf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -80,6 +81,12 @@
     <Compile Include="..\Adf.Service\ServiceState.cs">
       <Link>ServiceState.cs</Link>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Adf.Service\readme.txt">
+      <Link>readme.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
